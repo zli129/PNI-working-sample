@@ -256,7 +256,7 @@ class report_generator:
 
 if __name__ == '__main__':
     # Title
-    st.title('PNI Therapeutics')
+    st.title('Zhengyuan Working Sample')
     
     # Check the data we want, from 
     col1, col2, col3 = st.columns(3)
