@@ -256,14 +256,14 @@ class report_generator:
 
 if __name__ == '__main__':
     # Title
-    st.title('Zhengyuan Working Sample')
+    st.title('Zhengyuan: Working Sample')
     
     # Check the data we want, from 
     col1, col2, col3 = st.columns(3)
     col1.header("Time period")
     col2.text_input("From", key="date_from")
     col3.text_input("To", key="date_to")
-    st.text_input("Headset number you want to check, put the number in parentheses like (1,2,3)", key="headset_num")
+    st.text_input("Headset number you want to check, put the number in parentheses like (677,681,699)", key="headset_num")
     if st.session_state.date_from and st.session_state.date_to:
         data_test = load_data(start_date=st.session_state.date_from,end_date=st.session_state.date_to,headset_num=st.session_state.headset_num)
     elif st.session_state.date_from:
